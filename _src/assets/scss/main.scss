@@ -8,7 +8,6 @@
 
 .page-container {
   margin: 0;
-  padding: 1.5rem;
   height: 100vh;
   background-image: url('../images/drums-pink.jpg');
   background-position: center;
@@ -35,6 +34,16 @@
     border: 0.2rem solid $primaryColor;
     border-radius: 1rem;
   }
+}
+
+.item-background {
+  position: relative;
+  background-color: $primaryColor;
+  opacity: 0.4;
+  height: 5rem;
+  width: 4rem;
+  border: 0.2rem solid $primaryColor;
+  border-radius: 1rem;
 }
 
 .grid {

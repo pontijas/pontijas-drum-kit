@@ -1,7 +1,7 @@
 .footer {
   &-container {
-    position: fixed;
-    margin-top: 40vh;
+    position: relative;
+    bottom: -30vh;
   }
   &-copy {
     font-size: $footerFontSize;
