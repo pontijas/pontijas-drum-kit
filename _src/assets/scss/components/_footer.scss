@@ -1,0 +1,10 @@
+.footer {
+  &-container {
+    position: fixed;
+    margin-top: 40vh;
+  }
+  &-copy {
+    font-size: $footerFontSize;
+    color: $primaryColor;
+  }
+}
