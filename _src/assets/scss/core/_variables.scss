@@ -1,9 +1,15 @@
 // font families
 $mainFont: 'Poppins', sans-serif;
 
-// font sizes
-$mainFontSize: 3rem;
-$footerFontSize: 0.6rem;
+// font sizes mobile
+$mainFontSize: 2rem;
+$textSize: 0.6rem;
+$footerFontSize: 0.5rem;
+
+// font sizes min 768px
+$mainFontSizeBigger: 2.3rem;
+$textSizeBigger: 0.8rem;
+$footerFontSizeBigger: 0.7rem;
 
 // colors
 

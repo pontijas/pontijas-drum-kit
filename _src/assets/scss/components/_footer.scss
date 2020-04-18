@@ -1,6 +1,17 @@
 .footer {
+  &-container {
+    margin: 3rem 0 0 0;
+  }
   &-copy {
     font-size: $footerFontSize;
     color: $primaryColor;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .footer {
+    &-copy {
+      font-size: $footerFontSizeBigger;
+    }
   }
 }

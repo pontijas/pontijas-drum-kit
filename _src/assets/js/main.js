@@ -1,11 +1,9 @@
 'use strict';
 
-// console.log('holii');
-
-const clikedKey = document.querySelector('.js-key');
-
-function pushKey() {
-  console.log('holii');
+function playSound(e) {
+  const sound = document.querySelector(`audio[data-key=77]`);
+  console.log(sound);
+  console.log(e.keyCode);
 }
 
-clikedKey.addEventListener('keydown', pushKey);
+window.addEventListener('keydown', playSound);
