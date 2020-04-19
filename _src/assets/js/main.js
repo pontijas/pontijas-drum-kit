@@ -1,9 +1,21 @@
 'use strict';
 
-function playSound(e) {
-  const sound = document.querySelector(`audio[data-key=77]`);
-  console.log(sound);
-  console.log(e.keyCode);
+function executeAll(e) {
+  playSound(e);
+  paintChange(e);
 }
 
-window.addEventListener('keydown', playSound);
+function playSound(e) {
+  const sound = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+
+  if (!sound) return;
+  sound.currentTime = 0;
+  sound.play();
+}
+
+function paintChange(e) {
+  const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
+  key.classList.add('key-playing');
+}
+
+window.addEventListener('keydown', executeAll);
